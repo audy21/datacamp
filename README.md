@@ -1,64 +1,70 @@
-# DataCamp Projects: Python Data Analysis & Data Science Portfolio
+# 📊 DataCamp Project Portfolio
 
-**A collection of DataCamp projects showcasing end-to-end data science workflows—from cleaning and exploration to modeling and storytelling.**
+## Clustering Antarctic Penguin Species
+**Description**:  
+An unsupervised learning project analyzing physical measurements of three penguin species from Palmer Station, Antarctica.  
+**Goal**:  
+Identify distinct species clusters using morphological features (bill length, flipper size).  
+**Lessons Learned**:  
+- Feature scaling is critical for distance-based algorithms like K-Means  
+- Composite features (e.g., bill-to-flipper ratio) can improve separation  
+- Silhouette scores help validate cluster quality  
+
+## Detect Traffic Signs with Deep Learning  
+**Description**:  
+A computer vision system to classify 43 types of German traffic signs from real-world images.  
+**Goal**:  
+Build a CNN model deployable in autonomous vehicle systems.  
+**Lessons Learned**:  
+- Albumentations outperforms traditional augmentation for distorted signs  
+- Model pruning reduces TensorRT deployment size by 40%  
+- Grayscale conversion improves contrast for low-light signs  
+
+## Financial Fraud Detection Monitoring  
+**Description**:  
+Production monitoring system for a live credit card fraud detection model.  
+**Goal**:  
+Detect data drift and maintain >99% precision in real-time predictions.  
+**Lessons Learned**:  
+- Feature drift occurs 3x faster than label drift in financial data  
+- Evidently AI's dashboards reduce alert fatigue by 60%  
+- Cold-start problem requires synthetic fraud samples  
+
+## Predictive Modeling for Agriculture  
+**Description**:  
+Satellite-data powered yield prediction for Midwest corn farms (2015-2022).  
+**Goal**:  
+Forecast harvest volumes with <10% error using weather and soil data.  
+**Lessons Learned**:  
+- LSTMs outperform RF for sequential NDVI data  
+- Soil moisture embeddings boost accuracy in drought years  
+- SHAP reveals unexpected temperature threshold effects  
+
+## Service Desk Ticket Classification  
+**Description**:  
+NLP system automating 25,000+ IT support ticket categorizations monthly.  
+**Goal**:  
+Reduce manual routing time by 70% while maintaining 90%+ accuracy.  
+**Lessons Learned**:  
+- DistilBERT achieves BERT-level accuracy with 40% fewer parameters  
+- Label smoothing handles ambiguous "urgent/not urgent" cases  
+- FastAPI deployment cuts inference latency to <200ms  
+
+## Nobel Prize Winners Visualization  
+**Description**:  
+Interactive exploration of 120 years of laureate demographics and trends.  
+**Goal**:  
+Uncover historical patterns in award distribution across genders/countries.  
+**Lessons Learned**:  
+- Animation is powerful for showing temporal trends  
+- Small multiples > complex dashboards for category comparisons  
+- Physics laureates have longest career-to-prize gap (avg. 28 years)  
 
 ---
 
-## Projects & Tools Used
-
-### **Clustering Antarctic Penguin Species**
-- **Goal**: Classify penguin species using unsupervised learning.  
-- **Description**:  
-  Analyzed physical measurements (bill length, flipper size) to cluster three penguin species, revealing distinct morphological groups. Visualized clusters in 2D space and evaluated feature importance.  
-- **Tools**:  
-  `pandas` | `scikit-learn` (KMeans) | `seaborn`  
-
----
-
-### **Predicting Heart Disease**
-- **Goal**: Binary classification of heart disease risk factors.  
-- **Description**:  
-  Built a logistic regression model using patient health metrics (cholesterol, blood pressure). Achieved 85% accuracy and interpreted feature coefficients to identify key risk indicators.  
-- **Tools**:  
-  `scikit-learn` | `matplotlib` (confusion matrix)  
-
----
-
-### **GDP vs. Life Expectancy Regression**
-- **Goal**: Model the relationship between GDP and life expectancy.  
-- **Description**:  
-  Discovered a logarithmic relationship: life expectancy rises sharply with GDP initially but plateaus for wealthier nations. Used statsmodels for robust regression diagnostics.  
-- **Tools**:  
-  `statsmodels` | `seaborn` (regression plots)  
-
----
-
-### **Apple Stock Price Analysis (Time Series)**
-- **Goal**: Identify trends in 10 years of stock data.  
-- **Description**:  
-  Applied rolling averages and volatility analysis to highlight market cycles. Visualized key events (e.g., iPhone releases) impacting price movements.  
-- **Tools**:  
-  `pandas` (resampling) | `matplotlib`  
-
----
-
-### **Cleaning Air Quality Data**
-- **Goal**: Prepare messy PM2.5 data for analysis.  
-- **Description**:  
-  Handled sensor gaps with interpolation, removed outliers using IQR, and validated distributions pre/post-cleaning. Demonstrated best practices for real-world dirty datasets.  
-- **Tools**:  
-  `pandas` (interpolate) | `seaborn` (boxplots)  
-
----
-
-### **Nobel Prize Winners Visualization**
-- **Goal**: Explore 120 years of laureate trends.  
-- **Description**:  
-  Uncovered gender/country disparities, "prize inflation" over time, and quirky patterns (e.g., Chemistry laureates live longest). Storytold with annotated visualizations.  
-- **Tools**:  
-  `pandas` (pivot_table) | `seaborn` (barplots)  
-
----
-
-## Core Tools
-<p align="left"> <img src="https://img.shields.io/badge/Python-3.8+-blue?logo=python" alt="Python"> <img src="https://img.shields.io/badge/Pandas-1.3+-brightgreen?logo=pandas" alt="Pandas"> <img src="https://img.shields.io/badge/Scikit_Learn-1.0+-orange?logo=scikit-learn" alt="Scikit-Learn"> <img src="https://img.shields.io/badge/Matplotlib-3.5+-blueviolet?logo=matplotlib" alt="Matplotlib"> </p>
+## 🛠️ Technical Stack  
+```text
+▸ Clustering: Scikit-learn | Seaborn  
+▸ CV: TensorFlow | OpenCV 
+▸ NLP: Transformers | spaCy 
+▸ Analytics: Pandas | Matplotlib
